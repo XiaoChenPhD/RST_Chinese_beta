@@ -1,0 +1,145 @@
+10.7611 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+13.2989 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+13.2998 	INFO 	Loaded monitor calibration from ['2022_04_19 09:31']
+13.3002 	WARNING 	This monitor has not been color-calibrated. Using default DKL conversion matrix.
+13.3897 	WARNING 	This monitor has not been color-calibrated. Using default DKL conversion matrix.
+13.3899 	WARNING 	This monitor has not been color-calibrated. Using default DKL conversion matrix.
+13.4467 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x17cae01c0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x17cae0220>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='dkl', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x17c398640>, multiSample=False, name='window1', numSamples=2, pos=[560.0, 240.0], screen=0, size=array([1600, 1200]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.4468 	EXP 	window1: backgroundImage = ''
+13.4468 	EXP 	window1: backgroundFit = 'none'
+13.4543 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4548 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4552 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4557 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4562 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4564 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4569 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4577 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4580 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4581 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4586 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4590 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4594 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4598 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4601 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4606 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4610 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4611 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4613 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4619 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4621 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4624 	DEBUG 	Uploading Texture Font fontname to graphics card
+13.4658 	DEBUG 	Upload of Texture Font fontname complete
+13.4700 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4706 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4711 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.4712 	DEBUG 	Uploading Texture Font fontname to graphics card
+13.4728 	DEBUG 	Upload of Texture Font fontname complete
+13.4739 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+13.4739 	EXP 	window1: recordFrameIntervals = False
+13.6020 	EXP 	window1: recordFrameIntervals = True
+14.4550 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+14.4605 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4609 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4615 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4623 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4630 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4638 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4641 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4647 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4655 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4661 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+14.4664 	DEBUG 	Uploading Texture Font fontname to graphics card
+14.4687 	DEBUG 	Upload of Texture Font fontname complete
+14.4809 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+16.6109 	INFO 	keyboard.Keyboard is using iohub backend.
+16.6109 	INFO 	keyboard.Keyboard is using iohub backend.
+16.6109 	INFO 	keyboard.Keyboard is using iohub backend.
+16.6110 	INFO 	keyboard.Keyboard is using iohub backend.
+16.6110 	INFO 	keyboard.Keyboard is using iohub backend.
+16.6110 	EXP 	resting_state_demo: status = STARTED
+16.6493 	EXP 	Created text_welcome = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_welcome', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.6512 	EXP 	Created text_refresh = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_refresh', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.6575 	EXP 	Created rate_emotion_prompt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='rate_emotion_prompt', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.6717 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6721 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6724 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6727 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6730 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6732 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6735 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6738 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6740 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6744 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6747 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6751 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6752 	DEBUG 	Uploading Texture Font fontname to graphics card
+16.6775 	DEBUG 	Upload of Texture Font fontname complete
+16.6805 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6807 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6808 	DEBUG 	Uploading Texture Font fontname to graphics card
+16.6823 	DEBUG 	Upload of Texture Font fontname complete
+16.6990 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6993 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.6993 	DEBUG 	Uploading Texture Font fontname to graphics card
+16.7008 	DEBUG 	Upload of Texture Font fontname complete
+16.7390 	EXP 	Created slider_emotion = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Arial', granularity=1.0, labelColor=None, labelHeight=0.035, labelWrapWidth=None, labels=list(...), lineColor=None, markerColor=None, name='slider_emotion', opacity=None, ori=0.0, pos=array([ 0. , -0.1]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=5, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7, 8, 9]), units='height', win=Window(...))
+16.7395 	EXP 	Created text_refresh = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_refresh', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.7419 	EXP 	Created wait4trigger_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='wait4trigger_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Please wait for the scan to start.', units='height', win=Window(...), wrapWidth=1)
+16.7432 	EXP 	Created fake_stimulus_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fake_stimulus_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Please wait for the scan to start.', units='height', win=Window(...), wrapWidth=1)
+16.7449 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.4, italic=False, languageStyle='LTR', name='fixation', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+16.7454 	EXP 	Created text_refresh = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_refresh', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.7483 	EXP 	Created rate_emotion_prompt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='rate_emotion_prompt', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+16.8076 	EXP 	Created slider_emotion = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Arial', granularity=1.0, labelColor=None, labelHeight=0.035, labelWrapWidth=None, labels=list(...), lineColor=None, markerColor=None, name='slider_emotion', opacity=None, ori=0.0, pos=array([ 0. , -0.1]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=5, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7, 8, 9]), units='height', win=Window(...))
+16.8083 	EXP 	Created text_refresh = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_refresh', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.8110 	EXP 	Created main_body_questionnaire = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='main_body_questionnaire', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text='During the MRI my thoughts:', units='height', win=Window(...), wrapWidth=1)
+16.8114 	EXP 	Created item_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='item_text', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.8342 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.8347 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.8351 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.8354 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.8355 	DEBUG 	Uploading Texture Font fontname to graphics card
+16.8371 	DEBUG 	Upload of Texture Font fontname complete
+16.8563 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.8565 	DEBUG 	Uploading Texture Font fontname to graphics card
+16.8579 	DEBUG 	Upload of Texture Font fontname complete
+16.8760 	EXP 	Created slider_thinking_content = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-2, fillColor=None, flip=False, font='Arial', granularity=1.0, labelColor=None, labelHeight=0.035, labelWrapWidth=None, labels=list(...), lineColor=None, markerColor=None, name='slider_thinking_content', opacity=None, ori=0.0, pos=array([ 0. , -0.1]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=5, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7, 8, 9]), units='height', win=Window(...))
+16.8765 	EXP 	Created text_refresh = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_refresh', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.8806 	EXP 	Created goodbye_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='goodbye_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+0.0103 	EXP 	slider_emotion: autoLog = True
+0.0103 	EXP 	slider_emotion: styleTweaks = []
+0.0103 	EXP 	slider_emotion: styleTweaks = []
+0.0103 	EXP 	slider_emotion: styleTweaks = []
+0.0103 	EXP 	slider_emotion: styleTweaks = []
+0.0103 	EXP 	slider_emotion: contrast = 1.0
+0.0103 	EXP 	slider_emotion: markerPos = 5
+0.0103 	EXP 	slider_emotion: autoLog = True
+0.0103 	EXP 	slider_emotion: autoLog = True
+0.0103 	EXP 	slider_emotion: styleTweaks = []
+0.0103 	EXP 	slider_emotion: styleTweaks = []
+0.0103 	EXP 	slider_emotion: styleTweaks = []
+0.0103 	EXP 	slider_emotion: styleTweaks = []
+0.0103 	EXP 	slider_emotion: contrast = 1.0
+0.0103 	EXP 	slider_emotion: markerPos = 5
+0.0103 	EXP 	slider_emotion: autoLog = True
+0.0103 	EXP 	slider_thinking_content: autoLog = True
+0.0103 	EXP 	slider_thinking_content: styleTweaks = []
+0.0103 	EXP 	slider_thinking_content: styleTweaks = []
+0.0103 	EXP 	slider_thinking_content: styleTweaks = []
+0.0103 	EXP 	slider_thinking_content: styleTweaks = []
+0.0103 	EXP 	slider_thinking_content: contrast = 1.0
+0.0103 	EXP 	slider_thinking_content: markerPos = 5
+0.0103 	EXP 	slider_thinking_content: autoLog = True
+0.0219 	INFO 	Keyboard events cleared
+0.0216 	EXP 	text_welcome: autoDraw = True
+6.8851 	WARNING 	t of last frame was 24.00ms (=1/41)
+6.9020 	DATA 	Keypress: escape
+6.9068 	EXP 	resting_state_demo: status = STOPPED
+6.9085 	EXP 	text_welcome: autoDraw = False
+6.9096 	EXP 	resting_state_demo: status = STOPPED
+6.9115 	INFO 	saved data to '/Users/Chenxiao/Documents/project_codes/RST_Chinese_beta/data/999_resting_state_demo_2025-06-10_16h42.58.667.csv'
+6.9117 	INFO 	saved data to /Users/Chenxiao/Documents/project_codes/RST_Chinese_beta/data/999_resting_state_demo_2025-06-10_16h42.58.667.psydat
+7.2463 	DEBUG 	Saving data for resting_state_demo ExperimentHandler
