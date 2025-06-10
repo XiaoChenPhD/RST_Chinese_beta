@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on Tue 10 Jun 16:42:47 2025
+    on Tue 10 Jun 17:28:52 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -198,7 +198,7 @@ def setupWindow(expInfo=None, win=None):
             monitor='testMonitor', color=[0,0,0], colorSpace='dkl',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
-            units='height',
+            units='pix',
             checkTiming=False  # we're going to do this ourselves in a moment
         )
     else:
@@ -207,7 +207,7 @@ def setupWindow(expInfo=None, win=None):
         win.colorSpace = 'dkl'
         win.backgroundImage = ''
         win.backgroundFit = 'none'
-        win.units = 'height'
+        win.units = 'pix'
     if expInfo is not None:
         # get/measure frame rate if not already in expInfo
         if win._monitorFrameRate is None:
@@ -387,9 +387,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "welcome_screen" ---
     text_welcome = visual.TextStim(win=win, name='text_welcome',
-        text='接下来您需要根据屏幕上的指导语以及主试的指导完成一些任务或休息。\n\n首先请您根据要求使用数字描述您目前的情绪状态，请使用左手边的按键控制光标移动，使用右手边的按键确认。\n\n如果您没有问题，请按右手边的按键继续。',
+        text='"接下来您需要根据屏幕上的指导语以及主试的指导完成一些任务或休息。\\n首先请您根据要求使用数字描述您目前的情绪状态，请使用左手边的按键控制光标移动，使用右手边的按键确认。\\n如果您没有问题，请按右手边的按键继续。\\n"\n\n',
         font='Heiti SC',
-        pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        pos=(-300, 0), draggable=False, height=30.0, wrapWidth=10.0, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
