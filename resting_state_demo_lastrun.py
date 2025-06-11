@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on Wed 11 Jun 15:01:05 2025
+    on Wed 11 Jun 17:47:16 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -386,13 +386,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Start Code - component code to be run after the window creation
     
     # --- Initialize components for Routine "welcome_screen" ---
-    text_welcome = visual.TextStim(win=win, name='text_welcome',
-        text='接下来您需要根据屏幕上的指导语以及主试的指导完成一些任务或休息。\n首先请您根据要求使用数字描述您目前的情绪状态，请使用左手边的按键控制光标移动，使用右手边的按键确认。\n如果您没有问题，请按右手边的按键继续。\n\n',
-        font='Heiti SC',
-        pos=(-1, 0), draggable=False, height=30.0, wrapWidth=1.0, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=0.0);
+    image_welcome = visual.ImageStim(
+        win=win,
+        name='image_welcome', 
+        image='stimuli/welcome.png', mask=None, anchor='center',
+        ori=0.0, pos=(0, 0), draggable=False, size=(1.1, 0.825),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
     key_resp_welcome = keyboard.Keyboard(deviceName='key_resp_welcome')
     
     # --- Initialize components for Routine "refresh" ---
@@ -406,18 +407,18 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "emotional_level" ---
     rate_emotion_prompt = visual.TextStim(win=win, name='rate_emotion_prompt',
-        text='Please use the scale below to indicate how you feel right now:',
-        font='Arial',
+        text='请使用数字描述您目前的情绪状态：',
+        font='Heiti SC',
         pos=(0, 0.2), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     slider_emotion = visual.Slider(win=win, name='slider_emotion',
         startValue=5, size=(1.0, 0.1), pos=(0, -0.1), units=win.units,
-        labels=["very unhappy", "", "", "", "neutral", "", "", "", "very happy"], ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9), granularity=1.0,
+        labels=["非常不高兴", "", "", "", "平静", "", "", "", "非常高兴"], ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
         labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-        font='Arial', labelHeight=0.035,
+        font='SimHei', labelHeight=0.02,
         flip=False, ori=0.0, depth=-1, readOnly=False)
     key_resp_emotion = keyboard.Keyboard(deviceName='key_resp_emotion')
     
@@ -432,8 +433,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "wait4trigger_scanner" ---
     wait4trigger_text = visual.TextStim(win=win, name='wait4trigger_text',
-        text='Please wait for the scan to start.',
-        font='Arial',
+        text='即将开始，请等待……',
+        font='Heiti SC',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -441,8 +442,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "fake_stimulus" ---
     fake_stimulus_text = visual.TextStim(win=win, name='fake_stimulus_text',
-        text='Please wait for the scan to start.',
-        font='Arial',
+        text='即将开始，请等待……',
+        font='Heiti SC',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -468,18 +469,18 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "emotional_level" ---
     rate_emotion_prompt = visual.TextStim(win=win, name='rate_emotion_prompt',
-        text='Please use the scale below to indicate how you feel right now:',
-        font='Arial',
+        text='请使用数字描述您目前的情绪状态：',
+        font='Heiti SC',
         pos=(0, 0.2), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     slider_emotion = visual.Slider(win=win, name='slider_emotion',
         startValue=5, size=(1.0, 0.1), pos=(0, -0.1), units=win.units,
-        labels=["very unhappy", "", "", "", "neutral", "", "", "", "very happy"], ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9), granularity=1.0,
+        labels=["非常不高兴", "", "", "", "平静", "", "", "", "非常高兴"], ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
         labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-        font='Arial', labelHeight=0.035,
+        font='SimHei', labelHeight=0.02,
         flip=False, ori=0.0, depth=-1, readOnly=False)
     key_resp_emotion = keyboard.Keyboard(deviceName='key_resp_emotion')
     
@@ -494,25 +495,25 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "think_content" ---
     main_body_questionnaire = visual.TextStim(win=win, name='main_body_questionnaire',
-        text='During the MRI my thoughts:',
-        font='Arial',
+        text='我刚才的思维内容：',
+        font='Heiti SC',
         pos=(0, 0.3), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     item_text = visual.TextStim(win=win, name='item_text',
         text='',
-        font='Arial',
+        font='Heiti SC',
         pos=(0, 0.1), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
     slider_thinking_content = visual.Slider(win=win, name='slider_thinking_content',
         startValue=5, size=(1.0, 0.1), pos=(0, -0.1), units=win.units,
-        labels=["never", "", "", "", "sometimes", "", "", "", "always"], ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9), granularity=1.0,
+        labels=["完全没有", "", "", "", "一般", "", "", "", "几乎都是"], ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
         labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-        font='Arial', labelHeight=0.035,
+        font='Heiti SC', labelHeight=0.02,
         flip=False, ori=0.0, depth=-2, readOnly=False)
     key_resp_thinking_content = keyboard.Keyboard(deviceName='key_resp_thinking_content')
     
@@ -567,7 +568,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine welcome_screen
     welcome_screen = data.Routine(
         name='welcome_screen',
-        components=[text_welcome, key_resp_welcome],
+        components=[image_welcome, key_resp_welcome],
     )
     welcome_screen.status = NOT_STARTED
     continueRoutine = True
@@ -606,23 +607,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text_welcome* updates
+        # *image_welcome* updates
         
-        # if text_welcome is starting this frame...
-        if text_welcome.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if image_welcome is starting this frame...
+        if image_welcome.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_welcome.frameNStart = frameN  # exact frame index
-            text_welcome.tStart = t  # local t and not account for scr refresh
-            text_welcome.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_welcome, 'tStartRefresh')  # time at next scr refresh
+            image_welcome.frameNStart = frameN  # exact frame index
+            image_welcome.tStart = t  # local t and not account for scr refresh
+            image_welcome.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image_welcome, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_welcome.started')
+            thisExp.timestampOnFlip(win, 'image_welcome.started')
             # update status
-            text_welcome.status = STARTED
-            text_welcome.setAutoDraw(True)
+            image_welcome.status = STARTED
+            image_welcome.setAutoDraw(True)
         
-        # if text_welcome is active this frame...
-        if text_welcome.status == STARTED:
+        # if image_welcome is active this frame...
+        if image_welcome.status == STARTED:
             # update params
             pass
         
@@ -2050,9 +2051,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             keys = event.getKeys()
             
             if len(keys):
-                if 'k' in keys:
+                if 'a' in keys:
                     slider_thinking_content.markerPos = slider_thinking_content.markerPos - 1
-                elif 'l' in keys:
+                elif 's' in keys:
                     slider_thinking_content.markerPos = slider_thinking_content.markerPos  + 1 
             
             # *key_resp_thinking_content* updates
@@ -2074,7 +2075,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 win.callOnFlip(key_resp_thinking_content.clock.reset)  # t=0 on next screen flip
                 win.callOnFlip(key_resp_thinking_content.clearEvents, eventType='keyboard')  # clear events on next screen flip
             if key_resp_thinking_content.status == STARTED and not waitOnFlip:
-                theseKeys = key_resp_thinking_content.getKeys(keyList=['a','s'], ignoreKeys=["escape"], waitRelease=False)
+                theseKeys = key_resp_thinking_content.getKeys(keyList=['j','k'], ignoreKeys=["escape"], waitRelease=False)
                 _key_resp_thinking_content_allKeys.extend(theseKeys)
                 if len(_key_resp_thinking_content_allKeys):
                     key_resp_thinking_content.keys = _key_resp_thinking_content_allKeys[-1].name  # just the last key pressed

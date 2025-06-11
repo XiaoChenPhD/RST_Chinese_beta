@@ -1,0 +1,471 @@
+11.0108 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+12.5224 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+12.5235 	INFO 	Loaded monitor calibration from ['2022_04_19 09:31']
+12.5239 	WARNING 	This monitor has not been color-calibrated. Using default DKL conversion matrix.
+12.6217 	WARNING 	This monitor has not been color-calibrated. Using default DKL conversion matrix.
+12.6219 	WARNING 	This monitor has not been color-calibrated. Using default DKL conversion matrix.
+12.6764 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x17e99aa40>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x17e99aaa0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='dkl', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x17ea4c610>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.6764 	EXP 	window1: backgroundImage = ''
+12.6764 	EXP 	window1: backgroundFit = 'none'
+12.6833 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6843 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6852 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6867 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6880 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6885 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6894 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6908 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6909 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6911 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6921 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6931 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6939 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6948 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6955 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6966 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6975 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6978 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6982 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6997 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.6999 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.7001 	DEBUG 	Uploading Texture Font fontname to graphics card
+12.7030 	DEBUG 	Upload of Texture Font fontname complete
+12.7074 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.7088 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.7101 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+12.7102 	DEBUG 	Uploading Texture Font fontname to graphics card
+12.7117 	DEBUG 	Upload of Texture Font fontname complete
+12.7128 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+12.7128 	EXP 	window1: recordFrameIntervals = False
+12.8391 	EXP 	window1: recordFrameIntervals = True
+13.7383 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+13.7488 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.7500 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.7522 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.7557 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.7582 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.7610 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.7617 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.7638 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.7660 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.7682 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+13.7685 	DEBUG 	Uploading Texture Font fontname to graphics card
+13.7713 	DEBUG 	Upload of Texture Font fontname complete
+15.6855 	INFO 	keyboard.Keyboard is using iohub backend.
+15.6855 	INFO 	keyboard.Keyboard is using iohub backend.
+15.6856 	INFO 	keyboard.Keyboard is using iohub backend.
+15.6856 	INFO 	keyboard.Keyboard is using iohub backend.
+15.6856 	INFO 	keyboard.Keyboard is using iohub backend.
+15.6856 	EXP 	resting_state_demo: status = STARTED
+15.7545 	EXP 	Created image_welcome = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='stimuli/welcome.png', interpolate=True, mask=None, maskParams=None, name='image_welcome', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.1  , 0.825]), texRes=128.0, units='height', win=Window(...))
+15.7657 	EXP 	Created text_refresh = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_refresh', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+15.7803 	EXP 	Created rate_emotion_prompt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='rate_emotion_prompt', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text='请使用数字描述您目前的情绪状态：', units='height', win=Window(...), wrapWidth=1)
+16.1661 	WARNING 	Font b'SimHei' was requested. No similar font found.
+16.1747 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.1758 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.1767 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.1775 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.1783 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.1785 	DEBUG 	Uploading Texture Font fontname to graphics card
+16.1834 	DEBUG 	Upload of Texture Font fontname complete
+16.5283 	WARNING 	Font b'SimHei' was requested. No similar font found.
+16.5363 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.5374 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.5382 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.5388 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.5391 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.5394 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.5401 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.5406 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.5410 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.5413 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+16.5417 	DEBUG 	Uploading Texture Font fontname to graphics card
+16.5465 	DEBUG 	Upload of Texture Font fontname complete
+16.8789 	WARNING 	Font b'SimHei' was requested. No similar font found.
+17.2466 	WARNING 	Font b'SimHei' was requested. No similar font found.
+17.5910 	WARNING 	Font b'SimHei' was requested. No similar font found.
+17.9425 	WARNING 	Font b'SimHei' was requested. No similar font found.
+18.3170 	WARNING 	Font b'SimHei' was requested. No similar font found.
+18.6588 	WARNING 	Font b'SimHei' was requested. No similar font found.
+19.0045 	WARNING 	Font b'SimHei' was requested. No similar font found.
+19.0119 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+19.0131 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+19.0134 	DEBUG 	Uploading Texture Font fontname to graphics card
+19.0171 	DEBUG 	Upload of Texture Font fontname complete
+19.3531 	WARNING 	Font b'SimHei' was requested. No similar font found.
+19.7087 	WARNING 	Font b'SimHei' was requested. No similar font found.
+20.0427 	WARNING 	Font b'SimHei' was requested. No similar font found.
+20.3847 	WARNING 	Font b'SimHei' was requested. No similar font found.
+20.7160 	WARNING 	Font b'SimHei' was requested. No similar font found.
+21.0571 	WARNING 	Font b'SimHei' was requested. No similar font found.
+21.4149 	WARNING 	Font b'SimHei' was requested. No similar font found.
+21.7699 	WARNING 	Font b'SimHei' was requested. No similar font found.
+22.1531 	WARNING 	Font b'SimHei' was requested. No similar font found.
+22.1941 	EXP 	Created slider_emotion = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='SimHei', granularity=1.0, labelColor=None, labelHeight=0.02, labelWrapWidth=None, labels=['非常不高兴', '', '', '', '平静', '', '', '', '非常高兴'], lineColor=None, markerColor=None, name='slider_emotion', opacity=None, ori=0.0, pos=array([ 0. , -0.1]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=5, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7, 8, 9]), units='height', win=Window(...))
+22.1950 	EXP 	Created text_refresh = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_refresh', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+22.2010 	EXP 	Created wait4trigger_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='wait4trigger_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='即将开始，请等待……', units='height', win=Window(...), wrapWidth=1)
+22.2029 	EXP 	Created fake_stimulus_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fake_stimulus_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='即将开始，请等待……', units='height', win=Window(...), wrapWidth=1)
+22.2061 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.4, italic=False, languageStyle='LTR', name='fixation', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+22.2068 	EXP 	Created text_refresh = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_refresh', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+22.2082 	EXP 	Created rate_emotion_prompt = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='rate_emotion_prompt', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text='请使用数字描述您目前的情绪状态：', units='height', win=Window(...), wrapWidth=1)
+22.5328 	WARNING 	Font b'SimHei' was requested. No similar font found.
+22.8766 	WARNING 	Font b'SimHei' was requested. No similar font found.
+23.2338 	WARNING 	Font b'SimHei' was requested. No similar font found.
+23.5972 	WARNING 	Font b'SimHei' was requested. No similar font found.
+23.9405 	WARNING 	Font b'SimHei' was requested. No similar font found.
+24.2822 	WARNING 	Font b'SimHei' was requested. No similar font found.
+24.6326 	WARNING 	Font b'SimHei' was requested. No similar font found.
+24.9772 	WARNING 	Font b'SimHei' was requested. No similar font found.
+25.3136 	WARNING 	Font b'SimHei' was requested. No similar font found.
+25.6514 	WARNING 	Font b'SimHei' was requested. No similar font found.
+26.0077 	WARNING 	Font b'SimHei' was requested. No similar font found.
+26.3373 	WARNING 	Font b'SimHei' was requested. No similar font found.
+26.7010 	WARNING 	Font b'SimHei' was requested. No similar font found.
+27.0486 	WARNING 	Font b'SimHei' was requested. No similar font found.
+27.3987 	WARNING 	Font b'SimHei' was requested. No similar font found.
+27.7482 	WARNING 	Font b'SimHei' was requested. No similar font found.
+28.0951 	WARNING 	Font b'SimHei' was requested. No similar font found.
+28.4380 	WARNING 	Font b'SimHei' was requested. No similar font found.
+28.4747 	EXP 	Created slider_emotion = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='SimHei', granularity=1.0, labelColor=None, labelHeight=0.02, labelWrapWidth=None, labels=['非常不高兴', '', '', '', '平静', '', '', '', '非常高兴'], lineColor=None, markerColor=None, name='slider_emotion', opacity=None, ori=0.0, pos=array([ 0. , -0.1]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=5, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7, 8, 9]), units='height', win=Window(...))
+28.4756 	EXP 	Created text_refresh = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_refresh', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+28.4802 	EXP 	Created main_body_questionnaire = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='main_body_questionnaire', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text='我刚才的思维内容：', units='height', win=Window(...), wrapWidth=1)
+28.4807 	EXP 	Created item_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='item_text', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+28.8144 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+28.8214 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.8227 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.8237 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.8247 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.8251 	DEBUG 	Uploading Texture Font fontname to graphics card
+28.8291 	DEBUG 	Upload of Texture Font fontname complete
+29.1887 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+29.5223 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+29.8742 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+30.2361 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+30.6022 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+30.9658 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+31.3279 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+31.6957 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+31.7034 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+31.7046 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+31.7051 	DEBUG 	Uploading Texture Font fontname to graphics card
+31.7089 	DEBUG 	Upload of Texture Font fontname complete
+32.0524 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+32.4460 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+32.7946 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+33.1662 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+33.5286 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+33.8855 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+34.2570 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+34.6157 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+34.6232 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+34.6245 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+34.6255 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+34.6265 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+34.6269 	DEBUG 	Uploading Texture Font fontname to graphics card
+34.6306 	DEBUG 	Upload of Texture Font fontname complete
+34.9761 	WARNING 	Font b'Heiti SC' was requested. No similar font found.
+35.0131 	EXP 	Created slider_thinking_content = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-2, fillColor=None, flip=False, font='Heiti SC', granularity=1.0, labelColor=None, labelHeight=0.02, labelWrapWidth=None, labels=['完全没有', '', '', '', '一般', '', '', '', '几乎都是'], lineColor=None, markerColor=None, name='slider_thinking_content', opacity=None, ori=0.0, pos=array([ 0. , -0.1]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=5, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7, 8, 9]), units='height', win=Window(...))
+35.0139 	EXP 	Created text_refresh = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_refresh', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+35.0246 	EXP 	Created goodbye_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='goodbye_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+0.0114 	EXP 	slider_emotion: autoLog = True
+0.0114 	EXP 	slider_emotion: styleTweaks = []
+0.0114 	EXP 	slider_emotion: styleTweaks = []
+0.0114 	EXP 	slider_emotion: styleTweaks = []
+0.0114 	EXP 	slider_emotion: styleTweaks = []
+0.0114 	EXP 	slider_emotion: contrast = 1.0
+0.0114 	EXP 	slider_emotion: markerPos = 5
+0.0114 	EXP 	slider_emotion: autoLog = True
+0.0114 	EXP 	slider_emotion: autoLog = True
+0.0114 	EXP 	slider_emotion: styleTweaks = []
+0.0114 	EXP 	slider_emotion: styleTweaks = []
+0.0114 	EXP 	slider_emotion: styleTweaks = []
+0.0114 	EXP 	slider_emotion: styleTweaks = []
+0.0114 	EXP 	slider_emotion: contrast = 1.0
+0.0114 	EXP 	slider_emotion: markerPos = 5
+0.0114 	EXP 	slider_emotion: autoLog = True
+0.0114 	EXP 	slider_thinking_content: autoLog = True
+0.0114 	EXP 	slider_thinking_content: styleTweaks = []
+0.0114 	EXP 	slider_thinking_content: styleTweaks = []
+0.0114 	EXP 	slider_thinking_content: styleTweaks = []
+0.0114 	EXP 	slider_thinking_content: styleTweaks = []
+0.0114 	EXP 	slider_thinking_content: contrast = 1.0
+0.0114 	EXP 	slider_thinking_content: markerPos = 5
+0.0114 	EXP 	slider_thinking_content: autoLog = True
+0.0267 	INFO 	Keyboard events cleared
+0.0264 	EXP 	image_welcome: autoDraw = True
+1.4604 	WARNING 	t of last frame was 28.09ms (=1/35)
+1.4604 	EXP 	image_welcome: autoDraw = False
+1.4604 	EXP 	text_refresh: autoDraw = True
+1.4719 	DATA 	Keypress: j
+1.7742 	INFO 	Keyboard events cleared
+1.7739 	WARNING 	t of last frame was 24.45ms (=1/40)
+1.7739 	EXP 	text_refresh: autoDraw = False
+1.7739 	EXP 	text_refresh: autoDraw = False
+1.7739 	EXP 	slider_emotion: markerPos = None
+1.7739 	EXP 	slider_emotion: markerPos = 5
+1.7739 	EXP 	slider_emotion: markerPos = 5
+1.7739 	EXP 	rate_emotion_prompt: autoDraw = True
+1.7739 	EXP 	slider_emotion: autoDraw = True
+2.1147 	WARNING 	t of last frame was 24.15ms (=1/41)
+2.3145 	WARNING 	t of last frame was 23.78ms (=1/42)
+2.5150 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+3.3841 	DATA 	Keypress: a
+3.3877 	EXP 	rate_emotion_prompt: autoDraw = False
+3.3877 	EXP 	slider_emotion: autoDraw = False
+3.3877 	EXP 	text_refresh: autoDraw = True
+3.6813 	EXP 	text_refresh: autoDraw = False
+3.6813 	EXP 	text_refresh: autoDraw = False
+3.6813 	EXP 	wait4trigger_text: autoDraw = True
+4.6734 	EXP 	wait4trigger_text: autoDraw = False
+4.6734 	EXP 	wait4trigger_text: autoDraw = False
+4.6734 	EXP 	fake_stimulus_text: autoDraw = True
+4.6779 	DATA 	Keypress: j
+6.5565 	DATA 	Keypress: s
+6.6657 	EXP 	fake_stimulus_text: autoDraw = False
+6.6657 	EXP 	fake_stimulus_text: autoDraw = False
+6.6741 	EXP 	fixation: autoDraw = True
+10.6736 	EXP 	fixation: autoDraw = False
+10.6736 	EXP 	fixation: autoDraw = False
+10.6736 	EXP 	text_refresh: autoDraw = True
+10.9647 	EXP 	text_refresh: autoDraw = False
+10.9647 	EXP 	text_refresh: autoDraw = False
+10.9647 	EXP 	slider_emotion: markerPos = None
+10.9647 	EXP 	slider_emotion: markerPos = 5
+10.9647 	EXP 	slider_emotion: markerPos = 5
+10.9881 	INFO 	Keyboard events cleared
+10.9878 	EXP 	rate_emotion_prompt: autoDraw = True
+10.9878 	EXP 	slider_emotion: autoDraw = True
+11.6941 	DATA 	Keypress: a
+11.6979 	EXP 	rate_emotion_prompt: autoDraw = False
+11.6979 	EXP 	slider_emotion: autoDraw = False
+11.6979 	EXP 	text_refresh: autoDraw = True
+11.9895 	DEBUG 	Read excel file with openpyxl: think_content_condition.xlsx
+11.9899 	EXP 	Imported think_content_condition.xlsx as conditions, 10 conditions, 2 params
+11.9904 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'item': '是关于过去的事情', 'number': 1, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+12.0129 	INFO 	Keyboard events cleared
+12.0126 	EXP 	text_refresh: autoDraw = False
+12.0126 	EXP 	text_refresh: autoDraw = False
+12.0126 	EXP 	item_text: height = 0.05
+12.0126 	EXP 	item_text: height = 0.05
+12.0126 	EXP 	item_text: height = 0.05
+12.0126 	EXP 	item_text: text = '是关于过去的事情'
+12.0126 	EXP 	slider_thinking_content: markerPos = None
+12.0126 	EXP 	slider_thinking_content: markerPos = 5
+12.0126 	EXP 	slider_thinking_content: markerPos = 5
+12.0126 	EXP 	main_body_questionnaire: autoDraw = True
+12.0126 	EXP 	item_text: autoDraw = True
+12.0126 	EXP 	slider_thinking_content: autoDraw = True
+12.8047 	DATA 	Keypress: s
+12.8177 	EXP 	slider_thinking_content: markerPos = 6.0
+13.2597 	DATA 	Keypress: s
+13.2730 	EXP 	slider_thinking_content: markerPos = 7.0
+13.5218 	DATA 	Keypress: s
+13.5347 	EXP 	slider_thinking_content: markerPos = 8.0
+13.8318 	EXP 	main_body_questionnaire: autoDraw = False
+13.8318 	EXP 	item_text: autoDraw = False
+13.8318 	EXP 	slider_thinking_content: autoDraw = False
+13.8318 	EXP 	text_refresh: autoDraw = True
+13.8335 	DATA 	Keypress: j
+14.1175 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'item': '是关于将来的事情', 'number': 2, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+14.1342 	INFO 	Keyboard events cleared
+14.1340 	EXP 	text_refresh: autoDraw = False
+14.1340 	EXP 	text_refresh: autoDraw = False
+14.1340 	EXP 	item_text: height = 0.05
+14.1340 	EXP 	item_text: height = 0.05
+14.1340 	EXP 	item_text: height = 0.05
+14.1340 	EXP 	item_text: text = '是关于将来的事情'
+14.1340 	EXP 	slider_thinking_content: markerPos = None
+14.1340 	EXP 	slider_thinking_content: markerPos = 5
+14.1340 	EXP 	slider_thinking_content: markerPos = 5
+14.1340 	EXP 	main_body_questionnaire: autoDraw = True
+14.1340 	EXP 	item_text: autoDraw = True
+14.1340 	EXP 	slider_thinking_content: autoDraw = True
+14.5163 	DATA 	Keypress: a
+14.5319 	EXP 	slider_thinking_content: markerPos = 4.0
+14.7339 	DATA 	Keypress: a
+14.7488 	EXP 	slider_thinking_content: markerPos = 3.0
+14.9653 	EXP 	main_body_questionnaire: autoDraw = False
+14.9653 	EXP 	item_text: autoDraw = False
+14.9653 	EXP 	slider_thinking_content: autoDraw = False
+14.9653 	EXP 	text_refresh: autoDraw = True
+14.9670 	DATA 	Keypress: j
+15.2506 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'item': '是关于我自己的', 'number': 3, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+15.2670 	INFO 	Keyboard events cleared
+15.2667 	EXP 	text_refresh: autoDraw = False
+15.2667 	EXP 	text_refresh: autoDraw = False
+15.2667 	EXP 	item_text: height = 0.05
+15.2667 	EXP 	item_text: height = 0.05
+15.2667 	EXP 	item_text: height = 0.05
+15.2667 	EXP 	item_text: text = '是关于我自己的'
+15.2667 	EXP 	slider_thinking_content: markerPos = None
+15.2667 	EXP 	slider_thinking_content: markerPos = 5
+15.2667 	EXP 	slider_thinking_content: markerPos = 5
+15.2667 	EXP 	main_body_questionnaire: autoDraw = True
+15.2667 	EXP 	item_text: autoDraw = True
+15.2667 	EXP 	slider_thinking_content: autoDraw = True
+15.3992 	DATA 	Keypress: a
+15.4146 	EXP 	slider_thinking_content: markerPos = 4.0
+15.5907 	DATA 	Keypress: a
+15.6084 	EXP 	slider_thinking_content: markerPos = 3.0
+15.7885 	DATA 	Keypress: j
+15.8047 	EXP 	main_body_questionnaire: autoDraw = False
+15.8047 	EXP 	item_text: autoDraw = False
+15.8047 	EXP 	slider_thinking_content: autoDraw = False
+15.8047 	EXP 	text_refresh: autoDraw = True
+16.0922 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'item': '是关于他人的', 'number': 4, 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+16.1112 	INFO 	Keyboard events cleared
+16.1110 	EXP 	text_refresh: autoDraw = False
+16.1110 	EXP 	text_refresh: autoDraw = False
+16.1110 	EXP 	item_text: height = 0.05
+16.1110 	EXP 	item_text: height = 0.05
+16.1110 	EXP 	item_text: height = 0.05
+16.1110 	EXP 	item_text: text = '是关于他人的'
+16.1110 	EXP 	slider_thinking_content: markerPos = None
+16.1110 	EXP 	slider_thinking_content: markerPos = 5
+16.1110 	EXP 	slider_thinking_content: markerPos = 5
+16.1110 	EXP 	main_body_questionnaire: autoDraw = True
+16.1110 	EXP 	item_text: autoDraw = True
+16.1110 	EXP 	slider_thinking_content: autoDraw = True
+16.3834 	DATA 	Keypress: s
+16.3991 	EXP 	slider_thinking_content: markerPos = 6.0
+16.6667 	DATA 	Keypress: s
+16.6824 	EXP 	slider_thinking_content: markerPos = 7.0
+16.9133 	DATA 	Keypress: j
+16.9485 	EXP 	main_body_questionnaire: autoDraw = False
+16.9485 	EXP 	item_text: autoDraw = False
+16.9485 	EXP 	slider_thinking_content: autoDraw = False
+16.9485 	EXP 	text_refresh: autoDraw = True
+17.2342 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'item': '是正性的、积极的事件', 'number': 5, 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+17.2538 	INFO 	Keyboard events cleared
+17.2536 	EXP 	text_refresh: autoDraw = False
+17.2536 	EXP 	item_text: height = 0.05
+17.2536 	EXP 	item_text: height = 0.05
+17.2536 	EXP 	item_text: height = 0.05
+17.2536 	EXP 	item_text: text = '是正性的、积极的事件'
+17.2536 	EXP 	slider_thinking_content: markerPos = None
+17.2536 	EXP 	slider_thinking_content: markerPos = 5
+17.2536 	EXP 	slider_thinking_content: markerPos = 5
+17.2536 	EXP 	main_body_questionnaire: autoDraw = True
+17.2536 	EXP 	item_text: autoDraw = True
+17.2536 	EXP 	slider_thinking_content: autoDraw = True
+17.6502 	DATA 	Keypress: s
+17.6595 	EXP 	slider_thinking_content: markerPos = 6.0
+17.8722 	DATA 	Keypress: s
+17.8852 	EXP 	slider_thinking_content: markerPos = 7.0
+18.1169 	DATA 	Keypress: j
+18.1215 	EXP 	main_body_questionnaire: autoDraw = False
+18.1215 	EXP 	item_text: autoDraw = False
+18.1215 	EXP 	slider_thinking_content: autoDraw = False
+18.1215 	EXP 	text_refresh: autoDraw = True
+18.4062 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'item': '是负性的、消极的事件', 'number': 6, 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+18.4235 	INFO 	Keyboard events cleared
+18.4233 	EXP 	text_refresh: autoDraw = False
+18.4233 	EXP 	text_refresh: autoDraw = False
+18.4233 	EXP 	item_text: height = 0.05
+18.4233 	EXP 	item_text: height = 0.05
+18.4233 	EXP 	item_text: height = 0.05
+18.4233 	EXP 	item_text: text = '是负性的、消极的事件'
+18.4233 	EXP 	slider_thinking_content: markerPos = None
+18.4233 	EXP 	slider_thinking_content: markerPos = 5
+18.4233 	EXP 	slider_thinking_content: markerPos = 5
+18.4233 	EXP 	main_body_questionnaire: autoDraw = True
+18.4233 	EXP 	item_text: autoDraw = True
+18.4233 	EXP 	slider_thinking_content: autoDraw = True
+18.8931 	DATA 	Keypress: j
+18.8983 	EXP 	main_body_questionnaire: autoDraw = False
+18.8983 	EXP 	item_text: autoDraw = False
+18.8983 	EXP 	slider_thinking_content: autoDraw = False
+18.8983 	EXP 	text_refresh: autoDraw = True
+19.1841 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'item': '是以图像或意象的形式进行思维', 'number': 7, 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+19.2039 	INFO 	Keyboard events cleared
+19.2037 	EXP 	text_refresh: autoDraw = False
+19.2037 	EXP 	text_refresh: autoDraw = False
+19.2037 	EXP 	item_text: height = 0.05
+19.2037 	EXP 	item_text: height = 0.05
+19.2037 	EXP 	item_text: height = 0.05
+19.2037 	EXP 	item_text: text = '是以图像或意象的形式进行思维'
+19.2037 	EXP 	slider_thinking_content: markerPos = None
+19.2037 	EXP 	slider_thinking_content: markerPos = 5
+19.2037 	EXP 	slider_thinking_content: markerPos = 5
+19.2037 	EXP 	main_body_questionnaire: autoDraw = True
+19.2037 	EXP 	item_text: autoDraw = True
+19.2037 	EXP 	slider_thinking_content: autoDraw = True
+19.5006 	DATA 	Keypress: j
+19.5156 	EXP 	main_body_questionnaire: autoDraw = False
+19.5156 	EXP 	item_text: autoDraw = False
+19.5156 	EXP 	slider_thinking_content: autoDraw = False
+19.5156 	EXP 	text_refresh: autoDraw = True
+19.8010 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'item': '是以内部言语的形式进行思维', 'number': 8, 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+19.8199 	INFO 	Keyboard events cleared
+19.8196 	EXP 	text_refresh: autoDraw = False
+19.8196 	EXP 	text_refresh: autoDraw = False
+19.8196 	EXP 	item_text: height = 0.05
+19.8196 	EXP 	item_text: height = 0.05
+19.8196 	EXP 	item_text: height = 0.05
+19.8196 	EXP 	item_text: text = '是以内部言语的形式进行思维'
+19.8196 	EXP 	slider_thinking_content: markerPos = None
+19.8196 	EXP 	slider_thinking_content: markerPos = 5
+19.8196 	EXP 	slider_thinking_content: markerPos = 5
+19.8196 	EXP 	main_body_questionnaire: autoDraw = True
+19.8196 	EXP 	item_text: autoDraw = True
+19.8196 	EXP 	slider_thinking_content: autoDraw = True
+20.0770 	DATA 	Keypress: j
+20.0819 	EXP 	main_body_questionnaire: autoDraw = False
+20.0819 	EXP 	item_text: autoDraw = False
+20.0819 	EXP 	slider_thinking_content: autoDraw = False
+20.0819 	EXP 	text_refresh: autoDraw = True
+20.3242 	DATA 	Keypress: j
+20.3673 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'item': '让我感到开心', 'number': 9, 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+20.3842 	INFO 	Keyboard events cleared
+20.3841 	EXP 	text_refresh: autoDraw = False
+20.3841 	EXP 	text_refresh: autoDraw = False
+20.3841 	EXP 	item_text: height = 0.05
+20.3841 	EXP 	item_text: height = 0.05
+20.3841 	EXP 	item_text: height = 0.05
+20.3841 	EXP 	item_text: text = '让我感到开心'
+20.3841 	EXP 	slider_thinking_content: markerPos = None
+20.3841 	EXP 	slider_thinking_content: markerPos = 5
+20.3841 	EXP 	slider_thinking_content: markerPos = 5
+20.3841 	EXP 	main_body_questionnaire: autoDraw = True
+20.3841 	EXP 	item_text: autoDraw = True
+20.3841 	EXP 	slider_thinking_content: autoDraw = True
+20.5584 	DATA 	Keypress: j
+20.5704 	EXP 	main_body_questionnaire: autoDraw = False
+20.5704 	EXP 	item_text: autoDraw = False
+20.5704 	EXP 	slider_thinking_content: autoDraw = False
+20.5704 	EXP 	text_refresh: autoDraw = True
+20.7854 	DATA 	Keypress: j
+20.8552 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'item': '让我感到悲伤', 'number': 10, 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+20.8717 	INFO 	Keyboard events cleared
+20.8715 	EXP 	text_refresh: autoDraw = False
+20.8715 	EXP 	text_refresh: autoDraw = False
+20.8715 	EXP 	item_text: height = 0.05
+20.8715 	EXP 	item_text: height = 0.05
+20.8715 	EXP 	item_text: height = 0.05
+20.8715 	EXP 	item_text: text = '让我感到悲伤'
+20.8715 	EXP 	slider_thinking_content: markerPos = None
+20.8715 	EXP 	slider_thinking_content: markerPos = 5
+20.8715 	EXP 	slider_thinking_content: markerPos = 5
+20.8715 	EXP 	main_body_questionnaire: autoDraw = True
+20.8715 	EXP 	item_text: autoDraw = True
+20.8715 	EXP 	slider_thinking_content: autoDraw = True
+21.0093 	DATA 	Keypress: j
+21.0208 	EXP 	main_body_questionnaire: autoDraw = False
+21.0208 	EXP 	item_text: autoDraw = False
+21.0208 	EXP 	slider_thinking_content: autoDraw = False
+21.0208 	EXP 	text_refresh: autoDraw = True
+21.2244 	DATA 	Keypress: j
+21.3160 	INFO 	Keyboard events cleared
+21.3158 	EXP 	text_refresh: autoDraw = False
+21.3158 	EXP 	text_refresh: autoDraw = False
+21.3158 	EXP 	goodbye_text: autoDraw = True
+21.4528 	DATA 	Keypress: j
+22.2568 	EXP 	goodbye_text: autoDraw = False
+22.2583 	EXP 	resting_state_demo: status = STOPPED
+22.2652 	INFO 	saved data to '/Users/Chenxiao/Documents/project_codes/RST_Chinese_beta/data/999_resting_state_demo_2025-06-11_17h47.27.694.csv'
+22.2659 	INFO 	saved data to /Users/Chenxiao/Documents/project_codes/RST_Chinese_beta/data/999_resting_state_demo_2025-06-11_17h47.27.694.psydat
+22.2677 	DATA 	Keypress: a
+22.4079 	DEBUG 	Saving data for resting_state_demo ExperimentHandler
