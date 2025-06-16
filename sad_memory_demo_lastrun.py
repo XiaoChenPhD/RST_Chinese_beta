@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on Tue 10 Jun 14:48:26 2025
+    on Fri 13 Jun 15:17:51 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -126,7 +126,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/Chenxiao/Documents/project_codes/Rumination_State_Task_beta/sad_memory_demo_lastrun.py',
+        originPath='/Users/Chenxiao/Documents/project_codes/RST_Chinese_beta/sad_memory_demo_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -266,11 +266,23 @@ def setupDevices(expInfo, thisExp, win):
             deviceClass='keyboard',
             deviceName='key_resp_welcome',
         )
+    if deviceManager.getDevice('key_resp_emotion_instruct') is None:
+        # initialise key_resp_emotion_instruct
+        key_resp_emotion_instruct = deviceManager.addDevice(
+            deviceClass='keyboard',
+            deviceName='key_resp_emotion_instruct',
+        )
     if deviceManager.getDevice('key_resp_emotion') is None:
         # initialise key_resp_emotion
         key_resp_emotion = deviceManager.addDevice(
             deviceClass='keyboard',
             deviceName='key_resp_emotion',
+        )
+    if deviceManager.getDevice('key_resp_think_content_instruct') is None:
+        # initialise key_resp_think_content_instruct
+        key_resp_think_content_instruct = deviceManager.addDevice(
+            deviceClass='keyboard',
+            deviceName='key_resp_think_content_instruct',
         )
     if deviceManager.getDevice('key_resp_thinking_content') is None:
         # initialise key_resp_thinking_content
@@ -386,13 +398,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Start Code - component code to be run after the window creation
     
     # --- Initialize components for Routine "welcome_screen" ---
-    text_welcome = visual.TextStim(win=win, name='text_welcome',
-        text='During the MRI, please re-live the event corresponding to the keywords on the screen as vividly as possible in your imagination and re-experience it happening to you all over again. Please keep doing this when the MRI is on.\n\nPlease try your best not to move your head or body.\n\nPress a button to continue.',
-        font='Arial',
-        pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=0.0);
+    image_sad_memo_instruct = visual.ImageStim(
+        win=win,
+        name='image_sad_memo_instruct', 
+        image='stimuli/sad_memo_instruct.png', mask=None, anchor='center',
+        ori=0.0, pos=(0, 0), draggable=False, size=(1.1, 0.825),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
     key_resp_welcome = keyboard.Keyboard(deviceName='key_resp_welcome')
     # Run 'Begin Experiment' code from keyword_setup
     subject_id = expInfo['participant']
@@ -409,8 +422,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "wait4trigger_scanner" ---
     wait4trigger_text = visual.TextStim(win=win, name='wait4trigger_text',
-        text='Please wait for the scan to start.',
-        font='Arial',
+        text='即将开始，请等待。',
+        font='Noto Sans SC',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -418,8 +431,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "fake_stimulus" ---
     fake_stimulus_text = visual.TextStim(win=win, name='fake_stimulus_text',
-        text='Please wait for the scan to start.',
-        font='Arial',
+        text='即将开始，请等待。',
+        font='Noto Sans SC',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -428,11 +441,31 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "sad_memory" ---
     background = visual.TextStim(win=win, name='background',
         text=None,
+        font='Noto Sans SC',
+        pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    
+    # --- Initialize components for Routine "refresh" ---
+    text_refresh = visual.TextStim(win=win, name='text_refresh',
+        text=None,
         font='Arial',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
+    
+    # --- Initialize components for Routine "emotion_instruct" ---
+    image_emotion_instruct = visual.ImageStim(
+        win=win,
+        name='image_emotion_instruct', 
+        image='stimuli/emotion_instruct.png', mask=None, anchor='center',
+        ori=0.0, pos=(0, 0), draggable=False, size=(1.1, 0.825),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
+    key_resp_emotion_instruct = keyboard.Keyboard(deviceName='key_resp_emotion_instruct')
     
     # --- Initialize components for Routine "refresh" ---
     text_refresh = visual.TextStim(win=win, name='text_refresh',
@@ -445,18 +478,18 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "emotional_level" ---
     rate_emotion_prompt = visual.TextStim(win=win, name='rate_emotion_prompt',
-        text='Please use the scale below to indicate how you feel right now:',
-        font='Arial',
+        text='请使用数字描述您目前的情绪状态：',
+        font='Noto Sans SC',
         pos=(0, 0.2), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     slider_emotion = visual.Slider(win=win, name='slider_emotion',
         startValue=5, size=(1.0, 0.1), pos=(0, -0.1), units=win.units,
-        labels=["very unhappy", "", "", "", "neutral", "", "", "", "very happy"], ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9), granularity=1.0,
+        labels=["非常不高兴", "", "", "", "平静", "", "", "", "非常高兴"], ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
         labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-        font='Arial', labelHeight=0.035,
+        font='Noto Sans SC', labelHeight=0.04,
         flip=False, ori=0.0, depth=-1, readOnly=False)
     key_resp_emotion = keyboard.Keyboard(deviceName='key_resp_emotion')
     
@@ -469,27 +502,47 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         languageStyle='LTR',
         depth=0.0);
     
+    # --- Initialize components for Routine "think_content_instruct" ---
+    image_think_content_instruct = visual.ImageStim(
+        win=win,
+        name='image_think_content_instruct', 
+        image='stimuli/think_content_instruct.png', mask=None, anchor='center',
+        ori=0.0, pos=(0, 0), draggable=False, size=(1.1, 0.825),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
+    key_resp_think_content_instruct = keyboard.Keyboard(deviceName='key_resp_think_content_instruct')
+    
+    # --- Initialize components for Routine "refresh" ---
+    text_refresh = visual.TextStim(win=win, name='text_refresh',
+        text=None,
+        font='Arial',
+        pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    
     # --- Initialize components for Routine "think_content" ---
     main_body_questionnaire = visual.TextStim(win=win, name='main_body_questionnaire',
-        text='During the MRI my thoughts:',
-        font='Arial',
+        text='我刚才的思维内容：',
+        font='Noto Sans SC',
         pos=(0, 0.3), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     item_text = visual.TextStim(win=win, name='item_text',
         text='',
-        font='Arial',
+        font='Noto Sans SC',
         pos=(0, 0.1), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
     slider_thinking_content = visual.Slider(win=win, name='slider_thinking_content',
         startValue=5, size=(1.0, 0.1), pos=(0, -0.1), units=win.units,
-        labels=["never", "", "", "", "sometimes", "", "", "", "always"], ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9), granularity=1.0,
+        labels=["完全没有", "", "", "", "一般", "", "", "", "几乎都是"], ticks=(1, 2, 3, 4, 5, 6, 7, 8, 9), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
         labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-        font='Arial', labelHeight=0.035,
+        font='Noto Sans SC', labelHeight=0.04,
         flip=False, ori=0.0, depth=-2, readOnly=False)
     key_resp_thinking_content = keyboard.Keyboard(deviceName='key_resp_thinking_content')
     
@@ -504,8 +557,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "goodbye" ---
     goodbye_text = visual.TextStim(win=win, name='goodbye_text',
-        text="Thank you. The current scan is over; please wait for the researcher's instructions.\n\n\n\nPress a button to continue.\n\n",
-        font='Arial',
+        text='本阶段结束，请等待下一阶段的扫描。\n\n',
+        font='Noto Sans SC',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -544,7 +597,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine welcome_screen
     welcome_screen = data.Routine(
         name='welcome_screen',
-        components=[text_welcome, key_resp_welcome],
+        components=[image_sad_memo_instruct, key_resp_welcome],
     )
     welcome_screen.status = NOT_STARTED
     continueRoutine = True
@@ -583,23 +636,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text_welcome* updates
+        # *image_sad_memo_instruct* updates
         
-        # if text_welcome is starting this frame...
-        if text_welcome.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if image_sad_memo_instruct is starting this frame...
+        if image_sad_memo_instruct.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_welcome.frameNStart = frameN  # exact frame index
-            text_welcome.tStart = t  # local t and not account for scr refresh
-            text_welcome.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_welcome, 'tStartRefresh')  # time at next scr refresh
+            image_sad_memo_instruct.frameNStart = frameN  # exact frame index
+            image_sad_memo_instruct.tStart = t  # local t and not account for scr refresh
+            image_sad_memo_instruct.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image_sad_memo_instruct, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_welcome.started')
+            thisExp.timestampOnFlip(win, 'image_sad_memo_instruct.started')
             # update status
-            text_welcome.status = STARTED
-            text_welcome.setAutoDraw(True)
+            image_sad_memo_instruct.status = STARTED
+            image_sad_memo_instruct.setAutoDraw(True)
         
-        # if text_welcome is active this frame...
-        if text_welcome.status == STARTED:
+        # if image_sad_memo_instruct is active this frame...
+        if image_sad_memo_instruct.status == STARTED:
             # update params
             pass
         
@@ -622,7 +675,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp_welcome.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_welcome.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_welcome.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_welcome.getKeys(keyList=['a','s'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = key_resp_welcome.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
             _key_resp_welcome_allKeys.extend(theseKeys)
             if len(_key_resp_welcome_allKeys):
                 key_resp_welcome.keys = _key_resp_welcome_allKeys[-1].name  # just the last key pressed
@@ -1109,28 +1162,28 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if counter == 1:
             keyword1_text = visual.TextStim(win=win, name='keyword1_text',
                 text=keyword1,
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos1[0], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword2_text = visual.TextStim(win=win, name='keyword2_text',
                 text='',
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos1[1], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword3_text = visual.TextStim(win=win, name='keyword3_text',
                 text='',
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos1[2], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword4_text = visual.TextStim(win=win, name='keyword4_text',
                 text='',
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos1[3], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
@@ -1138,28 +1191,28 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         elif counter == 2:
             keyword1_text = visual.TextStim(win=win, name='keyword1_text',
                 text=keyword1,
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos2[0], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword2_text = visual.TextStim(win=win, name='keyword2_text',
                 text=keyword2,
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos2[1], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword3_text = visual.TextStim(win=win, name='keyword3_text',
                 text='',
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos2[2], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword4_text = visual.TextStim(win=win, name='keyword4_text',
                 text='',
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos2[3], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
@@ -1167,28 +1220,28 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         elif counter == 3:
             keyword1_text = visual.TextStim(win=win, name='keyword1_text',
                 text=keyword1,
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos3[0], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword2_text = visual.TextStim(win=win, name='keyword2_text',
                 text=keyword2,
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos3[1], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword3_text = visual.TextStim(win=win, name='keyword3_text',
                 text=keyword3,
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos3[2], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword4_text = visual.TextStim(win=win, name='keyword4_text',
                 text='',
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos3[3], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
@@ -1196,28 +1249,28 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         elif counter == 4:
             keyword1_text = visual.TextStim(win=win, name='keyword1_text',
                 text=keyword1,
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos4[0], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword2_text = visual.TextStim(win=win, name='keyword2_text',
                 text=keyword2,
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos4[1], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword3_text = visual.TextStim(win=win, name='keyword3_text',
                 text=keyword3,
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos4[2], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
                 depth=0.0)
             keyword4_text = visual.TextStim(win=win, name='keyword4_text',
                 text=keyword4,
-                font='Arial',
+                font='Noto Sans SC',
                 pos=pos4[3], height=text_height, wrapWidth=None, ori=0.0, 
                 color='white', colorSpace='rgb', opacity=None, 
                 languageStyle='LTR',
@@ -1474,6 +1527,268 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         routineTimer.addTime(-0.300000)
     thisExp.nextEntry()
     
+    # --- Prepare to start Routine "emotion_instruct" ---
+    # create an object to store info about Routine emotion_instruct
+    emotion_instruct = data.Routine(
+        name='emotion_instruct',
+        components=[image_emotion_instruct, key_resp_emotion_instruct],
+    )
+    emotion_instruct.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # create starting attributes for key_resp_emotion_instruct
+    key_resp_emotion_instruct.keys = []
+    key_resp_emotion_instruct.rt = []
+    _key_resp_emotion_instruct_allKeys = []
+    # store start times for emotion_instruct
+    emotion_instruct.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    emotion_instruct.tStart = globalClock.getTime(format='float')
+    emotion_instruct.status = STARTED
+    thisExp.addData('emotion_instruct.started', emotion_instruct.tStart)
+    emotion_instruct.maxDuration = None
+    # keep track of which components have finished
+    emotion_instructComponents = emotion_instruct.components
+    for thisComponent in emotion_instruct.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "emotion_instruct" ---
+    emotion_instruct.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *image_emotion_instruct* updates
+        
+        # if image_emotion_instruct is starting this frame...
+        if image_emotion_instruct.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            image_emotion_instruct.frameNStart = frameN  # exact frame index
+            image_emotion_instruct.tStart = t  # local t and not account for scr refresh
+            image_emotion_instruct.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image_emotion_instruct, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'image_emotion_instruct.started')
+            # update status
+            image_emotion_instruct.status = STARTED
+            image_emotion_instruct.setAutoDraw(True)
+        
+        # if image_emotion_instruct is active this frame...
+        if image_emotion_instruct.status == STARTED:
+            # update params
+            pass
+        
+        # *key_resp_emotion_instruct* updates
+        waitOnFlip = False
+        
+        # if key_resp_emotion_instruct is starting this frame...
+        if key_resp_emotion_instruct.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            key_resp_emotion_instruct.frameNStart = frameN  # exact frame index
+            key_resp_emotion_instruct.tStart = t  # local t and not account for scr refresh
+            key_resp_emotion_instruct.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_emotion_instruct, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'key_resp_emotion_instruct.started')
+            # update status
+            key_resp_emotion_instruct.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(key_resp_emotion_instruct.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_emotion_instruct.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_emotion_instruct.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_emotion_instruct.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
+            _key_resp_emotion_instruct_allKeys.extend(theseKeys)
+            if len(_key_resp_emotion_instruct_allKeys):
+                key_resp_emotion_instruct.keys = _key_resp_emotion_instruct_allKeys[-1].name  # just the last key pressed
+                key_resp_emotion_instruct.rt = _key_resp_emotion_instruct_allKeys[-1].rt
+                key_resp_emotion_instruct.duration = _key_resp_emotion_instruct_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer], 
+                playbackComponents=[]
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            emotion_instruct.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in emotion_instruct.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "emotion_instruct" ---
+    for thisComponent in emotion_instruct.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for emotion_instruct
+    emotion_instruct.tStop = globalClock.getTime(format='float')
+    emotion_instruct.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('emotion_instruct.stopped', emotion_instruct.tStop)
+    # check responses
+    if key_resp_emotion_instruct.keys in ['', [], None]:  # No response was made
+        key_resp_emotion_instruct.keys = None
+    thisExp.addData('key_resp_emotion_instruct.keys',key_resp_emotion_instruct.keys)
+    if key_resp_emotion_instruct.keys != None:  # we had a response
+        thisExp.addData('key_resp_emotion_instruct.rt', key_resp_emotion_instruct.rt)
+        thisExp.addData('key_resp_emotion_instruct.duration', key_resp_emotion_instruct.duration)
+    thisExp.nextEntry()
+    # the Routine "emotion_instruct" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # --- Prepare to start Routine "refresh" ---
+    # create an object to store info about Routine refresh
+    refresh = data.Routine(
+        name='refresh',
+        components=[text_refresh],
+    )
+    refresh.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # store start times for refresh
+    refresh.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    refresh.tStart = globalClock.getTime(format='float')
+    refresh.status = STARTED
+    thisExp.addData('refresh.started', refresh.tStart)
+    refresh.maxDuration = None
+    # keep track of which components have finished
+    refreshComponents = refresh.components
+    for thisComponent in refresh.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "refresh" ---
+    refresh.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine and routineTimer.getTime() < 0.3:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_refresh* updates
+        
+        # if text_refresh is starting this frame...
+        if text_refresh.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_refresh.frameNStart = frameN  # exact frame index
+            text_refresh.tStart = t  # local t and not account for scr refresh
+            text_refresh.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_refresh, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'text_refresh.started')
+            # update status
+            text_refresh.status = STARTED
+            text_refresh.setAutoDraw(True)
+        
+        # if text_refresh is active this frame...
+        if text_refresh.status == STARTED:
+            # update params
+            pass
+        
+        # if text_refresh is stopping this frame...
+        if text_refresh.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > text_refresh.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                text_refresh.tStop = t  # not accounting for scr refresh
+                text_refresh.tStopRefresh = tThisFlipGlobal  # on global time
+                text_refresh.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'text_refresh.stopped')
+                # update status
+                text_refresh.status = FINISHED
+                text_refresh.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer], 
+                playbackComponents=[]
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            refresh.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in refresh.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "refresh" ---
+    for thisComponent in refresh.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for refresh
+    refresh.tStop = globalClock.getTime(format='float')
+    refresh.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('refresh.stopped', refresh.tStop)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if refresh.maxDurationReached:
+        routineTimer.addTime(-refresh.maxDuration)
+    elif refresh.forceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-0.300000)
+    thisExp.nextEntry()
+    
     # --- Prepare to start Routine "emotional_level" ---
     # create an object to store info about Routine emotional_level
     emotional_level = data.Routine(
@@ -1564,9 +1879,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         keys = event.getKeys()
         
         if len(keys):
-            if 'k' in keys:
+            if 'a' in keys:
                 slider_emotion.markerPos = slider_emotion.markerPos - 1
-            elif 'l' in keys:
+            elif 's' in keys:
                 slider_emotion.markerPos = slider_emotion.markerPos  + 1 
         
         # *key_resp_emotion* updates
@@ -1588,7 +1903,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp_emotion.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_emotion.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_emotion.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_emotion.getKeys(keyList=['a','s'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = key_resp_emotion.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
             _key_resp_emotion_allKeys.extend(theseKeys)
             if len(_key_resp_emotion_allKeys):
                 key_resp_emotion.keys = _key_resp_emotion_allKeys[-1].name  # just the last key pressed
@@ -1649,6 +1964,268 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         thisExp.addData('key_resp_emotion.duration', key_resp_emotion.duration)
     thisExp.nextEntry()
     # the Routine "emotional_level" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # --- Prepare to start Routine "refresh" ---
+    # create an object to store info about Routine refresh
+    refresh = data.Routine(
+        name='refresh',
+        components=[text_refresh],
+    )
+    refresh.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # store start times for refresh
+    refresh.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    refresh.tStart = globalClock.getTime(format='float')
+    refresh.status = STARTED
+    thisExp.addData('refresh.started', refresh.tStart)
+    refresh.maxDuration = None
+    # keep track of which components have finished
+    refreshComponents = refresh.components
+    for thisComponent in refresh.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "refresh" ---
+    refresh.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine and routineTimer.getTime() < 0.3:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_refresh* updates
+        
+        # if text_refresh is starting this frame...
+        if text_refresh.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_refresh.frameNStart = frameN  # exact frame index
+            text_refresh.tStart = t  # local t and not account for scr refresh
+            text_refresh.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_refresh, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'text_refresh.started')
+            # update status
+            text_refresh.status = STARTED
+            text_refresh.setAutoDraw(True)
+        
+        # if text_refresh is active this frame...
+        if text_refresh.status == STARTED:
+            # update params
+            pass
+        
+        # if text_refresh is stopping this frame...
+        if text_refresh.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > text_refresh.tStartRefresh + 0.3-frameTolerance:
+                # keep track of stop time/frame for later
+                text_refresh.tStop = t  # not accounting for scr refresh
+                text_refresh.tStopRefresh = tThisFlipGlobal  # on global time
+                text_refresh.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'text_refresh.stopped')
+                # update status
+                text_refresh.status = FINISHED
+                text_refresh.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer], 
+                playbackComponents=[]
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            refresh.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in refresh.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "refresh" ---
+    for thisComponent in refresh.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for refresh
+    refresh.tStop = globalClock.getTime(format='float')
+    refresh.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('refresh.stopped', refresh.tStop)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if refresh.maxDurationReached:
+        routineTimer.addTime(-refresh.maxDuration)
+    elif refresh.forceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-0.300000)
+    thisExp.nextEntry()
+    
+    # --- Prepare to start Routine "think_content_instruct" ---
+    # create an object to store info about Routine think_content_instruct
+    think_content_instruct = data.Routine(
+        name='think_content_instruct',
+        components=[image_think_content_instruct, key_resp_think_content_instruct],
+    )
+    think_content_instruct.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # create starting attributes for key_resp_think_content_instruct
+    key_resp_think_content_instruct.keys = []
+    key_resp_think_content_instruct.rt = []
+    _key_resp_think_content_instruct_allKeys = []
+    # store start times for think_content_instruct
+    think_content_instruct.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    think_content_instruct.tStart = globalClock.getTime(format='float')
+    think_content_instruct.status = STARTED
+    thisExp.addData('think_content_instruct.started', think_content_instruct.tStart)
+    think_content_instruct.maxDuration = None
+    # keep track of which components have finished
+    think_content_instructComponents = think_content_instruct.components
+    for thisComponent in think_content_instruct.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "think_content_instruct" ---
+    think_content_instruct.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *image_think_content_instruct* updates
+        
+        # if image_think_content_instruct is starting this frame...
+        if image_think_content_instruct.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            image_think_content_instruct.frameNStart = frameN  # exact frame index
+            image_think_content_instruct.tStart = t  # local t and not account for scr refresh
+            image_think_content_instruct.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(image_think_content_instruct, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'image_think_content_instruct.started')
+            # update status
+            image_think_content_instruct.status = STARTED
+            image_think_content_instruct.setAutoDraw(True)
+        
+        # if image_think_content_instruct is active this frame...
+        if image_think_content_instruct.status == STARTED:
+            # update params
+            pass
+        
+        # *key_resp_think_content_instruct* updates
+        waitOnFlip = False
+        
+        # if key_resp_think_content_instruct is starting this frame...
+        if key_resp_think_content_instruct.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            key_resp_think_content_instruct.frameNStart = frameN  # exact frame index
+            key_resp_think_content_instruct.tStart = t  # local t and not account for scr refresh
+            key_resp_think_content_instruct.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_think_content_instruct, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'key_resp_think_content_instruct.started')
+            # update status
+            key_resp_think_content_instruct.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(key_resp_think_content_instruct.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_think_content_instruct.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_think_content_instruct.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_think_content_instruct.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
+            _key_resp_think_content_instruct_allKeys.extend(theseKeys)
+            if len(_key_resp_think_content_instruct_allKeys):
+                key_resp_think_content_instruct.keys = _key_resp_think_content_instruct_allKeys[-1].name  # just the last key pressed
+                key_resp_think_content_instruct.rt = _key_resp_think_content_instruct_allKeys[-1].rt
+                key_resp_think_content_instruct.duration = _key_resp_think_content_instruct_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer], 
+                playbackComponents=[]
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            think_content_instruct.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in think_content_instruct.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "think_content_instruct" ---
+    for thisComponent in think_content_instruct.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for think_content_instruct
+    think_content_instruct.tStop = globalClock.getTime(format='float')
+    think_content_instruct.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('think_content_instruct.stopped', think_content_instruct.tStop)
+    # check responses
+    if key_resp_think_content_instruct.keys in ['', [], None]:  # No response was made
+        key_resp_think_content_instruct.keys = None
+    thisExp.addData('key_resp_think_content_instruct.keys',key_resp_think_content_instruct.keys)
+    if key_resp_think_content_instruct.keys != None:  # we had a response
+        thisExp.addData('key_resp_think_content_instruct.rt', key_resp_think_content_instruct.rt)
+        thisExp.addData('key_resp_think_content_instruct.duration', key_resp_think_content_instruct.duration)
+    thisExp.nextEntry()
+    # the Routine "think_content_instruct" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # --- Prepare to start Routine "refresh" ---
@@ -1917,9 +2494,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             keys = event.getKeys()
             
             if len(keys):
-                if 'k' in keys:
+                if 'a' in keys:
                     slider_thinking_content.markerPos = slider_thinking_content.markerPos - 1
-                elif 'l' in keys:
+                elif 's' in keys:
                     slider_thinking_content.markerPos = slider_thinking_content.markerPos  + 1 
             
             # *key_resp_thinking_content* updates
@@ -1941,7 +2518,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 win.callOnFlip(key_resp_thinking_content.clock.reset)  # t=0 on next screen flip
                 win.callOnFlip(key_resp_thinking_content.clearEvents, eventType='keyboard')  # clear events on next screen flip
             if key_resp_thinking_content.status == STARTED and not waitOnFlip:
-                theseKeys = key_resp_thinking_content.getKeys(keyList=['a','s'], ignoreKeys=["escape"], waitRelease=False)
+                theseKeys = key_resp_thinking_content.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
                 _key_resp_thinking_content_allKeys.extend(theseKeys)
                 if len(_key_resp_thinking_content_allKeys):
                     key_resp_thinking_content.keys = _key_resp_thinking_content_allKeys[-1].name  # just the last key pressed
@@ -2229,7 +2806,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp_goodbye.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_goodbye.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_goodbye.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_goodbye.getKeys(keyList=['a','s'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = key_resp_goodbye.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
             _key_resp_goodbye_allKeys.extend(theseKeys)
             if len(_key_resp_goodbye_allKeys):
                 key_resp_goodbye.keys = _key_resp_goodbye_allKeys[-1].name  # just the last key pressed

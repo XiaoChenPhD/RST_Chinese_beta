@@ -179,7 +179,7 @@
         <Param val="code_emotion" valType="code" updates="None" name="name"/>
       </CodeComponent>
       <KeyboardComponent name="key_resp_emotion" plugin="None">
-        <Param val="'j','k'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'k','l'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -460,7 +460,7 @@
         <Param val="code_thinking_content" valType="code" updates="None" name="name"/>
       </CodeComponent>
       <KeyboardComponent name="key_resp_thinking_content" plugin="None">
-        <Param val="'j','k'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'k','l'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -525,7 +525,7 @@
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
       <KeyboardComponent name="key_resp_goodbye" plugin="None">
-        <Param val="'j','k'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'k','l'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -637,7 +637,7 @@
         <Param val="" valType="code" updates="None" name="validator"/>
       </ImageComponent>
       <KeyboardComponent name="key_resp_rest_instruct" plugin="None">
-        <Param val="'j','k'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'k','l'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -704,7 +704,7 @@
         <Param val="" valType="code" updates="None" name="validator"/>
       </ImageComponent>
       <KeyboardComponent name="key_welcome" plugin="None">
-        <Param val="'j','k'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'k','l'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -771,7 +771,7 @@
         <Param val="" valType="code" updates="None" name="validator"/>
       </ImageComponent>
       <KeyboardComponent name="key_resp_emotion_instruct" plugin="None">
-        <Param val="'j','k'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'k','l'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -838,7 +838,7 @@
         <Param val="" valType="code" updates="None" name="validator"/>
       </ImageComponent>
       <KeyboardComponent name="key_resp_think_content_instruct" plugin="None">
-        <Param val="'j','k'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="'k','l'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="" valType="str" updates="None" name="deviceLabel"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
