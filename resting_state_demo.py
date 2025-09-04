@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Thu  4 Sep 14:31:15 2025
+    on Thu  4 Sep 14:29:27 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -41,7 +41,7 @@ deviceManager = hardware.DeviceManager()
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 # store info about the experiment session
 psychopyVersion = '2025.1.1'
-expName = 'resting_state'  # from the Builder filename that created this script
+expName = 'resting_state_demo'  # from the Builder filename that created this script
 expVersion = ''
 # a list of functions to run when the experiment ends (starts off blank)
 runAtExit = []
@@ -134,7 +134,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/Chenxiao/Documents/project_codes/RST_Chinese_beta/resting_state.py',
+        originPath='/Users/Chenxiao/Documents/project_codes/RST_Chinese_beta/resting_state_demo.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -272,11 +272,11 @@ def setupDevices(expInfo, thisExp, win):
         deviceManager.addDevice(
             deviceClass='keyboard', deviceName='defaultKeyboard', backend='iohub'
         )
-    if deviceManager.getDevice('key_resp_welcome') is None:
-        # initialise key_resp_welcome
-        key_resp_welcome = deviceManager.addDevice(
+    if deviceManager.getDevice('key_welcome') is None:
+        # initialise key_welcome
+        key_welcome = deviceManager.addDevice(
             deviceClass='keyboard',
-            deviceName='key_resp_welcome',
+            deviceName='key_welcome',
         )
     if deviceManager.getDevice('key_resp_emotion') is None:
         # initialise key_resp_emotion
@@ -284,17 +284,11 @@ def setupDevices(expInfo, thisExp, win):
             deviceClass='keyboard',
             deviceName='key_resp_emotion',
         )
-    if deviceManager.getDevice('key_resp') is None:
-        # initialise key_resp
-        key_resp = deviceManager.addDevice(
+    if deviceManager.getDevice('key_resp_rest_instruct') is None:
+        # initialise key_resp_rest_instruct
+        key_resp_rest_instruct = deviceManager.addDevice(
             deviceClass='keyboard',
-            deviceName='key_resp',
-        )
-    if deviceManager.getDevice('scanner_trigger') is None:
-        # initialise scanner_trigger
-        scanner_trigger = deviceManager.addDevice(
-            deviceClass='keyboard',
-            deviceName='scanner_trigger',
+            deviceName='key_resp_rest_instruct',
         )
     if deviceManager.getDevice('key_resp_emotion_instruct') is None:
         # initialise key_resp_emotion_instruct
@@ -427,7 +421,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # Start Code - component code to be run after the window creation
     
-    # --- Initialize components for Routine "welcome_screen" ---
+    # --- Initialize components for Routine "welcome" ---
     image_welcome = visual.ImageStim(
         win=win,
         name='image_welcome', 
@@ -436,7 +430,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=False, depth=0.0)
-    key_resp_welcome = keyboard.Keyboard(deviceName='key_resp_welcome')
+    key_welcome = keyboard.Keyboard(deviceName='key_welcome')
     
     # --- Initialize components for Routine "refresh" ---
     text_refresh = visual.TextStim(win=win, name='text_refresh',
@@ -481,8 +475,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         ori=0.0, pos=(0, 0), draggable=False, size=(1.1, 0.825),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=0.0)
-    key_resp = keyboard.Keyboard(deviceName='key_resp')
+        texRes=128.0, interpolate=False, depth=0.0)
+    key_resp_rest_instruct = keyboard.Keyboard(deviceName='key_resp_rest_instruct')
     
     # --- Initialize components for Routine "refresh" ---
     text_refresh = visual.TextStim(win=win, name='text_refresh',
@@ -501,7 +495,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
-    scanner_trigger = keyboard.Keyboard(deviceName='scanner_trigger')
     
     # --- Initialize components for Routine "fake_stimulus" ---
     fake_stimulus_text = visual.TextStim(win=win, name='fake_stimulus_text',
@@ -667,28 +660,28 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6
     )
     
-    # --- Prepare to start Routine "welcome_screen" ---
-    # create an object to store info about Routine welcome_screen
-    welcome_screen = data.Routine(
-        name='welcome_screen',
-        components=[image_welcome, key_resp_welcome],
+    # --- Prepare to start Routine "welcome" ---
+    # create an object to store info about Routine welcome
+    welcome = data.Routine(
+        name='welcome',
+        components=[image_welcome, key_welcome],
     )
-    welcome_screen.status = NOT_STARTED
+    welcome.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
-    # create starting attributes for key_resp_welcome
-    key_resp_welcome.keys = []
-    key_resp_welcome.rt = []
-    _key_resp_welcome_allKeys = []
-    # store start times for welcome_screen
-    welcome_screen.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    welcome_screen.tStart = globalClock.getTime(format='float')
-    welcome_screen.status = STARTED
-    thisExp.addData('welcome_screen.started', welcome_screen.tStart)
-    welcome_screen.maxDuration = None
+    # create starting attributes for key_welcome
+    key_welcome.keys = []
+    key_welcome.rt = []
+    _key_welcome_allKeys = []
+    # store start times for welcome
+    welcome.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    welcome.tStart = globalClock.getTime(format='float')
+    welcome.status = STARTED
+    thisExp.addData('welcome.started', welcome.tStart)
+    welcome.maxDuration = None
     # keep track of which components have finished
-    welcome_screenComponents = welcome_screen.components
-    for thisComponent in welcome_screen.components:
+    welcomeComponents = welcome.components
+    for thisComponent in welcome.components:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -700,8 +693,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     frameN = -1
     
-    # --- Run Routine "welcome_screen" ---
-    welcome_screen.forceEnded = routineForceEnded = not continueRoutine
+    # --- Run Routine "welcome" ---
+    welcome.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
         t = routineTimer.getTime()
@@ -730,31 +723,31 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # update params
             pass
         
-        # *key_resp_welcome* updates
+        # *key_welcome* updates
         waitOnFlip = False
         
-        # if key_resp_welcome is starting this frame...
-        if key_resp_welcome.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if key_welcome is starting this frame...
+        if key_welcome.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            key_resp_welcome.frameNStart = frameN  # exact frame index
-            key_resp_welcome.tStart = t  # local t and not account for scr refresh
-            key_resp_welcome.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_welcome, 'tStartRefresh')  # time at next scr refresh
+            key_welcome.frameNStart = frameN  # exact frame index
+            key_welcome.tStart = t  # local t and not account for scr refresh
+            key_welcome.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_welcome, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'key_resp_welcome.started')
+            thisExp.timestampOnFlip(win, 'key_welcome.started')
             # update status
-            key_resp_welcome.status = STARTED
+            key_welcome.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(key_resp_welcome.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_welcome.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_welcome.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_welcome.getKeys(keyList=['3','4'], ignoreKeys=["escape"], waitRelease=False)
-            _key_resp_welcome_allKeys.extend(theseKeys)
-            if len(_key_resp_welcome_allKeys):
-                key_resp_welcome.keys = _key_resp_welcome_allKeys[-1].name  # just the last key pressed
-                key_resp_welcome.rt = _key_resp_welcome_allKeys[-1].rt
-                key_resp_welcome.duration = _key_resp_welcome_allKeys[-1].duration
+            win.callOnFlip(key_welcome.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_welcome.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_welcome.status == STARTED and not waitOnFlip:
+            theseKeys = key_welcome.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
+            _key_welcome_allKeys.extend(theseKeys)
+            if len(_key_welcome_allKeys):
+                key_welcome.keys = _key_welcome_allKeys[-1].name  # just the last key pressed
+                key_welcome.rt = _key_welcome_allKeys[-1].rt
+                key_welcome.duration = _key_welcome_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
         
@@ -770,17 +763,17 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 thisExp=thisExp, 
                 win=win, 
                 timers=[routineTimer, globalClock], 
-                currentRoutine=welcome_screen,
+                currentRoutine=welcome,
             )
             # skip the frame we paused on
             continue
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
-            welcome_screen.forceEnded = routineForceEnded = True
+            welcome.forceEnded = routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in welcome_screen.components:
+        for thisComponent in welcome.components:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -789,23 +782,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # --- Ending Routine "welcome_screen" ---
-    for thisComponent in welcome_screen.components:
+    # --- Ending Routine "welcome" ---
+    for thisComponent in welcome.components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    # store stop times for welcome_screen
-    welcome_screen.tStop = globalClock.getTime(format='float')
-    welcome_screen.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('welcome_screen.stopped', welcome_screen.tStop)
+    # store stop times for welcome
+    welcome.tStop = globalClock.getTime(format='float')
+    welcome.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('welcome.stopped', welcome.tStop)
     # check responses
-    if key_resp_welcome.keys in ['', [], None]:  # No response was made
-        key_resp_welcome.keys = None
-    thisExp.addData('key_resp_welcome.keys',key_resp_welcome.keys)
-    if key_resp_welcome.keys != None:  # we had a response
-        thisExp.addData('key_resp_welcome.rt', key_resp_welcome.rt)
-        thisExp.addData('key_resp_welcome.duration', key_resp_welcome.duration)
+    if key_welcome.keys in ['', [], None]:  # No response was made
+        key_welcome.keys = None
+    thisExp.addData('key_welcome.keys',key_welcome.keys)
+    if key_welcome.keys != None:  # we had a response
+        thisExp.addData('key_welcome.rt', key_welcome.rt)
+        thisExp.addData('key_welcome.duration', key_welcome.duration)
     thisExp.nextEntry()
-    # the Routine "welcome_screen" was not non-slip safe, so reset the non-slip timer
+    # the Routine "welcome" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # --- Prepare to start Routine "refresh" ---
@@ -1019,9 +1012,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         keys = event.getKeys()
         
         if len(keys):
-            if '1' in keys:
+            if 'a' in keys:
                 slider_emotion.markerPos = slider_emotion.markerPos - 1
-            elif '2' in keys:
+            elif 's' in keys:
                 slider_emotion.markerPos = slider_emotion.markerPos  + 1 
         
         # *key_resp_emotion* updates
@@ -1043,7 +1036,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp_emotion.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_emotion.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_emotion.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_emotion.getKeys(keyList=['3','4'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = key_resp_emotion.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
             _key_resp_emotion_allKeys.extend(theseKeys)
             if len(_key_resp_emotion_allKeys):
                 key_resp_emotion.keys = _key_resp_emotion_allKeys[-1].name  # just the last key pressed
@@ -1231,15 +1224,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine rest_instruct
     rest_instruct = data.Routine(
         name='rest_instruct',
-        components=[image_rest_instruct, key_resp],
+        components=[image_rest_instruct, key_resp_rest_instruct],
     )
     rest_instruct.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
-    # create starting attributes for key_resp
-    key_resp.keys = []
-    key_resp.rt = []
-    _key_resp_allKeys = []
+    # create starting attributes for key_resp_rest_instruct
+    key_resp_rest_instruct.keys = []
+    key_resp_rest_instruct.rt = []
+    _key_resp_rest_instruct_allKeys = []
     # store start times for rest_instruct
     rest_instruct.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     rest_instruct.tStart = globalClock.getTime(format='float')
@@ -1290,31 +1283,31 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # update params
             pass
         
-        # *key_resp* updates
+        # *key_resp_rest_instruct* updates
         waitOnFlip = False
         
-        # if key_resp is starting this frame...
-        if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if key_resp_rest_instruct is starting this frame...
+        if key_resp_rest_instruct.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            key_resp.frameNStart = frameN  # exact frame index
-            key_resp.tStart = t  # local t and not account for scr refresh
-            key_resp.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
+            key_resp_rest_instruct.frameNStart = frameN  # exact frame index
+            key_resp_rest_instruct.tStart = t  # local t and not account for scr refresh
+            key_resp_rest_instruct.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_rest_instruct, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'key_resp.started')
+            thisExp.timestampOnFlip(win, 'key_resp_rest_instruct.started')
             # update status
-            key_resp.status = STARTED
+            key_resp_rest_instruct.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp.getKeys(keyList=['3','4'], ignoreKeys=["escape"], waitRelease=False)
-            _key_resp_allKeys.extend(theseKeys)
-            if len(_key_resp_allKeys):
-                key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
-                key_resp.rt = _key_resp_allKeys[-1].rt
-                key_resp.duration = _key_resp_allKeys[-1].duration
+            win.callOnFlip(key_resp_rest_instruct.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_rest_instruct.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_rest_instruct.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_rest_instruct.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
+            _key_resp_rest_instruct_allKeys.extend(theseKeys)
+            if len(_key_resp_rest_instruct_allKeys):
+                key_resp_rest_instruct.keys = _key_resp_rest_instruct_allKeys[-1].name  # just the last key pressed
+                key_resp_rest_instruct.rt = _key_resp_rest_instruct_allKeys[-1].rt
+                key_resp_rest_instruct.duration = _key_resp_rest_instruct_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
         
@@ -1358,12 +1351,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     rest_instruct.tStopRefresh = tThisFlipGlobal
     thisExp.addData('rest_instruct.stopped', rest_instruct.tStop)
     # check responses
-    if key_resp.keys in ['', [], None]:  # No response was made
-        key_resp.keys = None
-    thisExp.addData('key_resp.keys',key_resp.keys)
-    if key_resp.keys != None:  # we had a response
-        thisExp.addData('key_resp.rt', key_resp.rt)
-        thisExp.addData('key_resp.duration', key_resp.duration)
+    if key_resp_rest_instruct.keys in ['', [], None]:  # No response was made
+        key_resp_rest_instruct.keys = None
+    thisExp.addData('key_resp_rest_instruct.keys',key_resp_rest_instruct.keys)
+    if key_resp_rest_instruct.keys != None:  # we had a response
+        thisExp.addData('key_resp_rest_instruct.rt', key_resp_rest_instruct.rt)
+        thisExp.addData('key_resp_rest_instruct.duration', key_resp_rest_instruct.duration)
     thisExp.nextEntry()
     # the Routine "rest_instruct" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -1493,15 +1486,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine wait4trigger_scanner
     wait4trigger_scanner = data.Routine(
         name='wait4trigger_scanner',
-        components=[wait4trigger_text, scanner_trigger],
+        components=[wait4trigger_text],
     )
     wait4trigger_scanner.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
-    # create starting attributes for scanner_trigger
-    scanner_trigger.keys = []
-    scanner_trigger.rt = []
-    _scanner_trigger_allKeys = []
     # store start times for wait4trigger_scanner
     wait4trigger_scanner.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     wait4trigger_scanner.tStart = globalClock.getTime(format='float')
@@ -1524,7 +1513,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Run Routine "wait4trigger_scanner" ---
     wait4trigger_scanner.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
+    while continueRoutine and routineTimer.getTime() < 1.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1552,33 +1541,19 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # update params
             pass
         
-        # *scanner_trigger* updates
-        waitOnFlip = False
-        
-        # if scanner_trigger is starting this frame...
-        if scanner_trigger.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            scanner_trigger.frameNStart = frameN  # exact frame index
-            scanner_trigger.tStart = t  # local t and not account for scr refresh
-            scanner_trigger.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(scanner_trigger, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'scanner_trigger.started')
-            # update status
-            scanner_trigger.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(scanner_trigger.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(scanner_trigger.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if scanner_trigger.status == STARTED and not waitOnFlip:
-            theseKeys = scanner_trigger.getKeys(keyList=['s','S'], ignoreKeys=["escape"], waitRelease=False)
-            _scanner_trigger_allKeys.extend(theseKeys)
-            if len(_scanner_trigger_allKeys):
-                scanner_trigger.keys = _scanner_trigger_allKeys[-1].name  # just the last key pressed
-                scanner_trigger.rt = _scanner_trigger_allKeys[-1].rt
-                scanner_trigger.duration = _scanner_trigger_allKeys[-1].duration
-                # a response ends the routine
-                continueRoutine = False
+        # if wait4trigger_text is stopping this frame...
+        if wait4trigger_text.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > wait4trigger_text.tStartRefresh + 1-frameTolerance:
+                # keep track of stop time/frame for later
+                wait4trigger_text.tStop = t  # not accounting for scr refresh
+                wait4trigger_text.tStopRefresh = tThisFlipGlobal  # on global time
+                wait4trigger_text.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'wait4trigger_text.stopped')
+                # update status
+                wait4trigger_text.status = FINISHED
+                wait4trigger_text.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1619,16 +1594,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     wait4trigger_scanner.tStop = globalClock.getTime(format='float')
     wait4trigger_scanner.tStopRefresh = tThisFlipGlobal
     thisExp.addData('wait4trigger_scanner.stopped', wait4trigger_scanner.tStop)
-    # check responses
-    if scanner_trigger.keys in ['', [], None]:  # No response was made
-        scanner_trigger.keys = None
-    thisExp.addData('scanner_trigger.keys',scanner_trigger.keys)
-    if scanner_trigger.keys != None:  # we had a response
-        thisExp.addData('scanner_trigger.rt', scanner_trigger.rt)
-        thisExp.addData('scanner_trigger.duration', scanner_trigger.duration)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if wait4trigger_scanner.maxDurationReached:
+        routineTimer.addTime(-wait4trigger_scanner.maxDuration)
+    elif wait4trigger_scanner.forceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-1.000000)
     thisExp.nextEntry()
-    # the Routine "wait4trigger_scanner" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
     
     # --- Prepare to start Routine "fake_stimulus" ---
     # create an object to store info about Routine fake_stimulus
@@ -1661,7 +1634,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Run Routine "fake_stimulus" ---
     fake_stimulus.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine and routineTimer.getTime() < 10.0:
+    while continueRoutine and routineTimer.getTime() < 2.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1692,7 +1665,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # if fake_stimulus_text is stopping this frame...
         if fake_stimulus_text.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > fake_stimulus_text.tStartRefresh + 10-frameTolerance:
+            if tThisFlipGlobal > fake_stimulus_text.tStartRefresh + 2-frameTolerance:
                 # keep track of stop time/frame for later
                 fake_stimulus_text.tStop = t  # not accounting for scr refresh
                 fake_stimulus_text.tStopRefresh = tThisFlipGlobal  # on global time
@@ -1748,7 +1721,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     elif fake_stimulus.forceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-10.000000)
+        routineTimer.addTime(-2.000000)
     thisExp.nextEntry()
     
     # --- Prepare to start Routine "resting" ---
@@ -1782,7 +1755,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Run Routine "resting" ---
     resting.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine and routineTimer.getTime() < 480.0:
+    while continueRoutine and routineTimer.getTime() < 4.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1813,7 +1786,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # if fixation is stopping this frame...
         if fixation.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > fixation.tStartRefresh + 480-frameTolerance:
+            if tThisFlipGlobal > fixation.tStartRefresh + 4-frameTolerance:
                 # keep track of stop time/frame for later
                 fixation.tStop = t  # not accounting for scr refresh
                 fixation.tStopRefresh = tThisFlipGlobal  # on global time
@@ -1869,7 +1842,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     elif resting.forceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-480.000000)
+        routineTimer.addTime(-4.000000)
     thisExp.nextEntry()
     
     # --- Prepare to start Routine "refresh" ---
@@ -2075,7 +2048,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp_emotion_instruct.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_emotion_instruct.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_emotion_instruct.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_emotion_instruct.getKeys(keyList=['3','4'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = key_resp_emotion_instruct.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
             _key_resp_emotion_instruct_allKeys.extend(theseKeys)
             if len(_key_resp_emotion_instruct_allKeys):
                 key_resp_emotion_instruct.keys = _key_resp_emotion_instruct_allKeys[-1].name  # just the last key pressed
@@ -2345,9 +2318,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         keys = event.getKeys()
         
         if len(keys):
-            if '1' in keys:
+            if 'a' in keys:
                 slider_emotion.markerPos = slider_emotion.markerPos - 1
-            elif '2' in keys:
+            elif 's' in keys:
                 slider_emotion.markerPos = slider_emotion.markerPos  + 1 
         
         # *key_resp_emotion* updates
@@ -2369,7 +2342,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp_emotion.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_emotion.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_emotion.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_emotion.getKeys(keyList=['3','4'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = key_resp_emotion.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
             _key_resp_emotion_allKeys.extend(theseKeys)
             if len(_key_resp_emotion_allKeys):
                 key_resp_emotion.keys = _key_resp_emotion_allKeys[-1].name  # just the last key pressed
@@ -2635,7 +2608,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp_think_content_instruct.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_think_content_instruct.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_think_content_instruct.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_think_content_instruct.getKeys(keyList=['3','4'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = key_resp_think_content_instruct.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
             _key_resp_think_content_instruct_allKeys.extend(theseKeys)
             if len(_key_resp_think_content_instruct_allKeys):
                 key_resp_think_content_instruct.keys = _key_resp_think_content_instruct_allKeys[-1].name  # just the last key pressed
@@ -2963,9 +2936,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             keys = event.getKeys()
             
             if len(keys):
-                if '1' in keys:
+                if 'a' in keys:
                     slider_thinking_content.markerPos = slider_thinking_content.markerPos - 1
-                elif '2' in keys:
+                elif 's' in keys:
                     slider_thinking_content.markerPos = slider_thinking_content.markerPos  + 1 
             
             # *key_resp_thinking_content* updates
@@ -2987,7 +2960,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 win.callOnFlip(key_resp_thinking_content.clock.reset)  # t=0 on next screen flip
                 win.callOnFlip(key_resp_thinking_content.clearEvents, eventType='keyboard')  # clear events on next screen flip
             if key_resp_thinking_content.status == STARTED and not waitOnFlip:
-                theseKeys = key_resp_thinking_content.getKeys(keyList=['3','4'], ignoreKeys=["escape"], waitRelease=False)
+                theseKeys = key_resp_thinking_content.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
                 _key_resp_thinking_content_allKeys.extend(theseKeys)
                 if len(_key_resp_thinking_content_allKeys):
                     key_resp_thinking_content.keys = _key_resp_thinking_content_allKeys[-1].name  # just the last key pressed
@@ -3289,7 +3262,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp_goodbye.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_goodbye.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_goodbye.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_goodbye.getKeys(keyList=['3','4'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = key_resp_goodbye.getKeys(keyList=['k','l'], ignoreKeys=["escape"], waitRelease=False)
             _key_resp_goodbye_allKeys.extend(theseKeys)
             if len(_key_resp_goodbye_allKeys):
                 key_resp_goodbye.keys = _key_resp_goodbye_allKeys[-1].name  # just the last key pressed
