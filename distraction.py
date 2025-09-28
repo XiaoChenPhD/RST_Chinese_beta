@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Thu  4 Sep 14:28:27 2025
+    on Sun 28 Sep 13:38:12 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -2736,7 +2736,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp_goodbye.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_goodbye.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_goodbye.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_goodbye.getKeys(keyList=['3','4'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = key_resp_goodbye.getKeys(keyList=['a','s'], ignoreKeys=["escape"], waitRelease=False)
             _key_resp_goodbye_allKeys.extend(theseKeys)
             if len(_key_resp_goodbye_allKeys):
                 key_resp_goodbye.keys = _key_resp_goodbye_allKeys[-1].name  # just the last key pressed

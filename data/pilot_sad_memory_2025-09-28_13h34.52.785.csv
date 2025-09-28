@@ -1,0 +1,4 @@
+﻿thisRow.t,notes,welcome_screen.started,image_sad_memo_instruct.started,key_resp_welcome.started,welcome_screen.stopped,key_resp_welcome.keys,key_resp_welcome.rt,key_resp_welcome.duration,refresh.started,text_refresh.started,text_refresh.stopped,refresh.stopped,wait4trigger_scanner.started,wait4trigger_text.started,scanner_trigger.started,participant,session,date,expName,expVersion,psychopyVersion,frameRate,expStart,
+,,0.034805041999788955,0.04473591699934332,0.04473591699934332,3.789053749998857,4,3.7407627499997034,None,,,,,,,,pilot,001,2025-09-28_13h34.52.785,sad_memory,,2025.1.1,None,2025-09-28 13h35.01.687638 +0800,
+,,,,,,,,,3.7891035419997934,3.7971598749991244,4.103016832999856,4.082118499998614,,,,pilot,001,2025-09-28_13h34.52.785,sad_memory,,2025.1.1,None,2025-09-28 13h35.01.687638 +0800,
+,,,,,,,,,,,,,4.082156041999042,4.103016832999856,4.103016832999856,,,,,,,,,

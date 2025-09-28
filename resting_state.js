@@ -2053,7 +2053,7 @@ function goodbyeRoutineEachFrame() {
     
     // if key_resp_goodbye is active this frame...
     if (key_resp_goodbye.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_goodbye.getKeys({keyList: ['3','4'], waitRelease: false});
+      let theseKeys = key_resp_goodbye.getKeys({keyList: ['a','s'], waitRelease: false});
       _key_resp_goodbye_allKeys = _key_resp_goodbye_allKeys.concat(theseKeys);
       if (_key_resp_goodbye_allKeys.length > 0) {
         key_resp_goodbye.keys = _key_resp_goodbye_allKeys[_key_resp_goodbye_allKeys.length - 1].name;  // just the last key pressed
